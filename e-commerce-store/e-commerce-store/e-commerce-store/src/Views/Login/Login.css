@@ -1,0 +1,9 @@
+.img{
+    background-image: url(../../assets/images/logo.jpg);
+    height: 800px;
+    background-repeat:no-repeat;
+    background-size: 2200px;
+}
+.label{
+    color:white !important;
+}
