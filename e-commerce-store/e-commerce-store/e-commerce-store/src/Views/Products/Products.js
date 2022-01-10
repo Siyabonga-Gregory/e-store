@@ -11,13 +11,17 @@ export default function Products() {
     }, [,]);
 
     return (<>
-      <h1>Products</h1>
-        <div className='products'> {
+        <h1>Products</h1>
+        <div className='products'>
+            {
                 allProducts.map((product, index) => {
-                    return (<> 
-                       <ProductCard props={product}/> 
+                    return (<>
+                        <div className='productDiv'>
+                            <ProductCard props={product} />
+                        </div>
                     </>)
-                })}
+                })
+            }
         </div>
     </>)
 }

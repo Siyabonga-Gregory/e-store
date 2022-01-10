@@ -1,9 +1,18 @@
 .products
 {
     display: flex;
+    flex-wrap: wrap;
 }
 .product-image img
 {
     width: 250px;
     height: 250px;
 }
+
+.productDiv
+{
+    margin-right: 20px;
+    margin-bottom: 220px;
+}
+
+
