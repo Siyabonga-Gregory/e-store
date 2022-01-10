@@ -1,5 +1,5 @@
 # e-store (In Development) 
-Simply e-commerce store based on my react-dashboard with custom nested route.❤️
+Simply e-commerce store based on my react-dashboard with custom nested routes❤️
 
 If need help please, don't hesitate to send me a mail 👉 huge.fuze@gmail.com
 
