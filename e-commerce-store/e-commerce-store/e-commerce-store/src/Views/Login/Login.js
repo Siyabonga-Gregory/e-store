@@ -12,7 +12,7 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
-import Logo from '../../assets/images/logo.jpg';
+import Logo from '../../assets/images/estoreLatest.png';
 import './Login.css';
 
 function Copyright(props) {

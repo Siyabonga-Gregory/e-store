@@ -23,4 +23,15 @@
   margin-left:0rem;
   padding-right: 0.1rem;
   align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.description{
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.price{
+  font-size: 0.7rem;
+  font: weight 900;
 }

@@ -3,15 +3,20 @@ import axios from 'axios';
 const PRODUCTS_URL = 'https://fakestoreapi.com/products';
 
 class ProductProvider {
-
-  static async get() {
-    return axios({
-      mode: 'no-cors',
-      method: 'GET',
-      url: PRODUCTS_URL,
+  static LoadProducts = () => {    
+    axios.get(PRODUCTS_URL)
+    .then((response) => {
+        console.log(response);
     })
-      .then(res => res.data)
-      .catch(err => err);
+    .catch(console.log)
+}
+
+  static async getAllProduct(allProducts,setAllProduct) {
+    axios.get(PRODUCTS_URL)
+    .then((response) => {
+        setAllProduct(response.data);
+    })
+    .catch(console.log)
   }
 }
 

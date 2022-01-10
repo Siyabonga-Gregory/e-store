@@ -8,6 +8,7 @@
     "@material/button": "^13.0.0",
     "@material/card": "^13.0.0",
     "axios": "^0.24.0",
+    "materialui-grid": "^1.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "3.2.0"
