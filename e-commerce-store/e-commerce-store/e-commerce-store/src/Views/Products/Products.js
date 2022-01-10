@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import ProductCard from '../ProductCard/ProductCard';
+import React, { useEffect, useState, Suspense } from 'react'
 import ProductProvider from '../../providers/ProductsProvider';
 import './Products.css';
+const ProductCard = React.lazy(() => import('../ProductCard/ProductCard'));
+
 
 export default function Products() {
     const [allProducts, setAllProducts] = useState([]);
@@ -17,7 +18,9 @@ export default function Products() {
                 allProducts.map((product, index) => {
                     return (<>
                         <div className='productDiv'>
-                            <ProductCard props={product} />
+                            <Suspense fallback={<h1>Loading...</h1>}>
+                                <ProductCard props={product} />
+                            </Suspense>
                         </div>
                     </>)
                 })
