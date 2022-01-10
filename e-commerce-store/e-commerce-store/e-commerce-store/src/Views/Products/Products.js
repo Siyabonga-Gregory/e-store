@@ -4,7 +4,11 @@ import ProductProvider from '../../providers/ProductsProvider';
 
 export default function Products() {
     const [allProducts,setAllProducts]=useState([]);
-    ProductProvider.getAllProduct(allProducts,setAllProducts)
+   
+    useEffect(() => {
+        ProductProvider.getAllProduct(allProducts,setAllProducts)
+      }, [,]);
+
     return (<>
         <div>
             <h1>Products</h1>
@@ -14,7 +18,7 @@ export default function Products() {
                         <table key={index}>
                             <tbody>
                                 <tr>
-                                    <td> Result </td>
+                                    <td> Item </td>
                                     <td> 
                                     <table>
                                             <tbody>
@@ -25,7 +29,7 @@ export default function Products() {
                                                                 <br/><span className="heading">price : </span><span className="content">{product.price} </span> 
                                                                 <br/><span className="heading">description :</span><span className="content">{product.description}</span>
                                                                 <br/><span className='heading'>category : </span><span className="content">{product.category}</span>
-                                                                <br/><span className='heading'>image : </span><span className="content">{product.image}</span>
+                                                                <br/><span className='heading'>image : </span><span className="content"><img src= {product.image} /></span>
                                                                 <br/><span className='heading'>Rating Rate : </span><span className="content">{product['rating'].rate}</span>
                                                                 <br/><span className='heading'>Rating Count : </span><span className="content">{product['rating'].count}</span>
 
