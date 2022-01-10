@@ -1,3 +1,7 @@
+.products
+{
+    display: flex;
+}
 .product-image img
 {
     width: 250px;
