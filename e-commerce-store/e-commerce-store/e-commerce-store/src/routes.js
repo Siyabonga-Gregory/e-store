@@ -9,7 +9,6 @@ const Dashboard   =React.lazy(()=>import('./Views/Dashboard/Dashboard'));
 const Profile     =React.lazy(()=>import('./Views/Profile/Profile'));
 const Settings    =React.lazy(()=> import('./Views/Settings/Settings'));
 
-
 function onClick(e, item) {
   console.log(item);
 }

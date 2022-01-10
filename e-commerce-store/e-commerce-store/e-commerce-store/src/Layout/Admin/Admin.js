@@ -20,7 +20,8 @@ import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
+import MailIcon from         '@material-ui/icons/Mail';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
@@ -189,15 +190,15 @@ export default function Admin() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton aria-label="show 1 new mails" color="inherit">
+        <IconButton aria-label="show 1 cart item" color="inherit">
           <Badge badgeContent={1} color="secondary">
-            <MailIcon />
+            <ShoppingCartIcon />
           </Badge>
         </IconButton>
-        <p>Messages</p>
+        <p>Carts</p>
       </MenuItem>
       <MenuItem>
-        <IconButton aria-label="show 1 new notifications" color="inherit">
+        <IconButton aria-label="show 1 new notification" color="inherit">
           <Badge badgeContent={1} color="secondary">
             <NotificationsIcon />
           </Badge>
@@ -242,13 +243,13 @@ export default function Admin() {
           </Typography>
         <div className={classes.grow} />
         <div className={classes.sectionDesktop}>
-          <IconButton aria-label="show 2 new mails" color="inherit">
-            <Badge badgeContent={10} color="secondary">
-              <MailIcon />
+          <IconButton aria-label="show 3 carts items" color="inherit">
+            <Badge badgeContent={3} color="secondary">
+              <ShoppingCartIcon />
             </Badge>
           </IconButton>
-          <IconButton aria-label="show 1 new notifications" color="inherit">
-            <Badge badgeContent={6} color="secondary">
+          <IconButton aria-label="show 2 new notifications" color="inherit">
+            <Badge badgeContent={2} color="secondary">
               <NotificationsIcon />
             </Badge>
           </IconButton>
