@@ -13,8 +13,7 @@ export default function Products() {
 
     return (<>
         <h1>Products</h1>
-        <div className='products'>
-            {
+        <div className='products'>{
                 allProducts.map((product, index) => {
                     return (<>
                         <div className='productDiv'>

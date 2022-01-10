@@ -1,29 +1,29 @@
 .my-card {
-    height: 457px;
-    width: 420px;
-    background-color: rgba(23, 23, 121, 0.212);;
+    height: 370px;
+    width: 370px;
+    background-color: rgba(23, 23, 121, 0.041);;
   }
 
   .my-card img {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    height: 457px;
-    width: 420px;
+    height: 370px;
+    width: 370px;
   }
 
 .Icon {
      fill: #ffffff !important; 
-     width: 50px !important;
+     width: 40px !important;
      height: 50px !important;
      margin-right: 39px;
 }
 .card-actions{
-  background-color: rgba(23, 23, 121, 0.212);;
-  padding-left: 3rem;
+  background-color: rgba(23, 23, 121, 0.062);;
+  padding-left: 1rem;
   margin-left:0rem;
   padding-right: 0.1rem;
   align-items: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.1rem;
 }
 
 .description{

@@ -21,15 +21,12 @@ export default function ProductCard(props) {
                 <ZoomInIcon className='Icon' />
                 <ShoppingBagIcon className='Icon' />
                 <FavoriteBorderIcon className='Icon' />
-            </div>
-            <div className='description'>
-                <Typography paragraph>
-                    {props['props'].description}
-                </Typography>
-            </div>
+            </div> 
             <div className='price'>
                 <h1>R{props['props'].price}</h1>
+                <hr/>
             </div>
+           
         </div>
     </>)
 }
