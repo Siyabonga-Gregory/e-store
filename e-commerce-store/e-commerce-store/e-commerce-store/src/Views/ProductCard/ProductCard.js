@@ -9,11 +9,12 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import Typography from '@material-ui/core/Typography';
 
 export default function ProductCard(props) {
+    console.log(props['props'].id);
     return (<>
         <div class="my-card__media mdc-card__media mdc-card__media--16-9"></div>
         <div class="my-card">
             <div className='card-image'>
-                <img src={product} />
+                <img src={props['props'].image} />
             </div>
             <div class="card-actions">
                 <ShoppingCartIcon className='Icon' />
@@ -23,11 +24,11 @@ export default function ProductCard(props) {
             </div>
            <div className='description'>
            <Typography paragraph>
-                accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
+                {props['props'].description}
             </Typography>
            </div>
            <div className='price'>
-               <h1>R7800,00</h1>
+               <h1>R{props['props'].price}</h1>
            </div>
         </div>
     </>)
