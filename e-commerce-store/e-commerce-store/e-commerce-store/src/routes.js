@@ -4,6 +4,8 @@ import ReceiptIcon from "@material-ui/icons/Receipt";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import DesktopWindowsIcon from "@material-ui/icons/DesktopWindows";
 import SettingsIcon from "@material-ui/icons/Settings";
+import DashboardIcon from "@material-ui/icons/Dashboard";
+import CategoryIcon from "@material-ui/icons/Category";
 
 const Dashboard   =React.lazy(()=>import('./Views/Dashboard/Dashboard'));  
 const Profile     =React.lazy(()=>import('./Views/Profile/Profile'));
@@ -17,11 +19,10 @@ export const items = [
     { 
         name: "dashboard",
         label: "dashboard",
-        Icon: HomeIcon, 
         path: "/dashboard",
         name: "dashboard",
         label: "Dashboard",
-        Icon: SettingsIcon,
+        Icon: DashboardIcon,
         component: Dashboard,
         layout: "/admin",
         onClick , 
@@ -29,13 +30,13 @@ export const items = [
     {
       name: "Product",
       label: "Product",
-      Icon: SettingsIcon,
+      Icon: CategoryIcon,
       items: [
         { 
             path: "/settings",
             name: "New Arrival",
             label: "New Arrival",
-            Icon: SettingsIcon,
+            Icon: ReceiptIcon,
             component: Settings,
             layout: "/admin",
             onClick ,    
