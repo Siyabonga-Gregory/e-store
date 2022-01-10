@@ -33,7 +33,7 @@ export const items = [
       Icon: CategoryIcon,
       items: [
         { 
-            path: "/settings",
+            path: "/products",
             name: "New Arrival",
             label: "New Arrival",
             Icon: ReceiptIcon,

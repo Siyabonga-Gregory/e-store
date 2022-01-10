@@ -14,5 +14,16 @@
     fill: #424669 !important;
   }
 
+  .sidebar-item-content{
+    padding-left: 0px;
+    box-shadow: 25px;
+    width: 15rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #33333b;
+    border-radius: 5px;
+  }
+
 
   
