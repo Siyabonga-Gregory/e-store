@@ -12,7 +12,7 @@ export default function Products() {
     }, [,]);
 
     return (<>
-        <h1>Products</h1>
+        <h1>New Arrival</h1>
         <div className='products'>{
                 allProducts.map((product, index) => {
                     return (<>

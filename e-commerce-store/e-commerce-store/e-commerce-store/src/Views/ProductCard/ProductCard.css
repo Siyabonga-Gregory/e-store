@@ -3,14 +3,12 @@
     width: 370px;
     background-color: rgba(23, 23, 121, 0.041);;
   }
-
-  .my-card img {
+.my-card img {
     padding-top: 1rem;
     padding-bottom: 1rem;
     height: 370px;
     width: 370px;
   }
-
 .Icon {
      fill: #ffffff !important; 
      width: 40px !important;
@@ -25,12 +23,10 @@
   align-items: center;
   margin-bottom: 0.1rem;
 }
-
 .description{
   font-size: 14px;
   font-weight: 900;
 }
-
 .price{
   font-size: 0.7rem;
   font: weight 900;
